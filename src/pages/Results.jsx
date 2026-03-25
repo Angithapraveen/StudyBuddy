@@ -126,7 +126,7 @@ const Results = () => {
                     {isYoutube ? <Youtube size={28} /> : <FileText size={28} />}
                  </div>
                  <div>
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 block mb-0.5">
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 block mb-0.5">
                         {isYoutube ? 'Video Intelligence' : 'Document Analysis'}
                     </span>
                     <div className="flex items-center space-x-3 text-xs font-black text-slate-500 uppercase tracking-widest">
@@ -150,8 +150,8 @@ const Results = () => {
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex items-center space-x-2.5 px-5 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.1em] transition-all hover:scale-[1.02] active:scale-95 ${
                         activeTab === tab.id 
-                        ? 'bg-white text-primary-700 shadow-xl border border-slate-100' 
-                        : 'text-slate-500 hover:text-slate-800'
+                        ? 'bg-white text-primary-700 shadow-xl border border-slate-200' 
+                        : 'text-slate-600 hover:text-slate-800'
                     }`}
                 >
                     {tab.icon}
